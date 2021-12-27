@@ -7,21 +7,24 @@ export default async (event) => {
     const message1 = event.message.text
     const { data } = await axios.get('https://www.agentm.tw/search_page?type=movie&', { params: { k: message1 } })
     const $ = cheerio.load(data)
-    const replies = []
-    if ($('.fg-title').length < 5) {
+    // const replies = []
+    if ($('.fg-title').length <= 5) {
       for (let i = 0; i < $('.fg-title').length; i++) {
-        replies.push(`片名:${$('.fg-title').eq(i).text().trim()}
-        \n上映日期:${$('.fg-caption').eq(i).find('time').text()}
-        \n${$('fg-frame').eq(0).find('img').attr('src')}`)
+        flex.contents.contents[i].body.contents[0].url = `${$('.fg-frame').eq(i).find('img').attr('src')}`
+        flex.contents.contents[i].body.contents[1].contents[0].contents[0].text = `${$('.fg-title').eq(i).text().trim()}`
+        flex.contents.contents[i].body.contents[1].contents[1].contents[0].text = `${$('.fg-caption').eq(i).find('time').text()}`
+        flex.contents.contents[i].body.contents[1].contents[2].contents[1].action.uri = 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
       }
     } else {
       for (let i = 0; i < 5; i++) {
-        flex.contents[i].body.contents.url = `${$('.fg-frame').eq(0).find('img').attr('src')}`
-        // flex.contents.body.contents.contents[0].contents.text[0] = `${$('.fg-title').eq(i).text().trim()}`
+        flex.contents.contents[i].body.contents[0].url = `${$('.fg-frame').eq(i).find('img').attr('src')}`
+        flex.contents.contents[i].body.contents[1].contents[0].contents[0].text = `${$('.fg-title').eq(i).text().trim()}`
+        flex.contents.contents[i].body.contents[1].contents[1].contents[0].text = `${$('.fg-caption').eq(i).find('time').text()}`
+        flex.contents.contents[i].body.contents[1].contents[2].contents[1].action.uri = 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
       }
     }
-    event.reply(replies)
-    console.log($('fg-frame').eq(0).find('img').attr('src'))
+    event.reply(flex)
+    console.log($('.fg-itm').eq(0).find('a').attr('href'))
   } catch (error) {
     console.log(error)
     event.reply('發生錯誤')
