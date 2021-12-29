@@ -2,7 +2,6 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 
 export default async (event) => {
-  // const weekNew = event.message.text.replace('!new ', '')
   try {
     const { data } = await axios.get('https://www.agentm.tw/movie_list_week')
     const $ = cheerio.load(data)
