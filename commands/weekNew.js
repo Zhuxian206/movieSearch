@@ -18,7 +18,7 @@ export default async (event) => {
       return Math.round(Math.random() * (max - min)) + min
     }
     const group = []
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
       const num = rand(0, $('.fg-frame').length - 1)
       if (group.includes(num)) {
         i--
@@ -41,7 +41,7 @@ export default async (event) => {
                 url: `${$('.fg-frame').eq(group[i]).find('img').attr('src')}`,
                 size: 'full',
                 aspectMode: 'cover',
-                aspectRatio: '3:4',
+                aspectRatio: '5:7',
                 gravity: 'center'
               },
               {
@@ -94,45 +94,30 @@ export default async (event) => {
                               {
                                 type: 'text',
                                 text: '上映日期',
-                                color: '#a9a9a9',
-                                style: 'normal'
+                                color: '#ccc7c5cc',
+                                size: '16px',
+                                flex: 0,
+                                align: 'end'
                               }
                             ],
-                            spacing: 'xs'
+                            flex: 0,
+                            spacing: 'lg'
                           }
                         ]
                       },
                       {
                         type: 'box',
-                        layout: 'baseline',
+                        layout: 'vertical',
                         contents: [
                           {
                             type: 'text',
                             text: `${$('.fg-caption').eq(group[i]).find('time').text()}`,
-                            style: 'italic',
-                            align: 'start',
-                            weight: 'bold',
-                            color: '#FFFFFFCC',
+                            color: '#f2eae6cc',
                             size: 'sm',
-                            margin: 'xs'
+                            style: 'italic',
+                            weight: 'bold'
                           }
-                        ],
-                        spacing: 'xs'
-                      },
-                      {
-                        type: 'button',
-                        action: {
-                          type: 'uri',
-                          label: '影片詳情',
-                          uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(group[i]).find('a').attr('href')}`
-                        },
-                        style: 'secondary',
-                        margin: 'none',
-                        color: '#ffffffaa',
-                        offsetBottom: '0%',
-                        offsetTop: '60%',
-                        position: 'absolute',
-                        offsetEnd: '0%'
+                        ]
                       }
                     ],
                     spacing: 'xs'
@@ -142,7 +127,34 @@ export default async (event) => {
                 offsetBottom: '0px',
                 offsetStart: '0px',
                 offsetEnd: '0px',
-                paddingAll: '20px'
+                paddingAll: '20px',
+                height: '30%'
+              },
+              {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'button',
+                    action: {
+                      type: 'uri',
+                      label: '影片詳情',
+                      uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(group[i]).find('a').attr('href')}`
+                    },
+                    height: 'sm',
+                    offsetTop: '1%',
+                    color: '#ffffff'
+                  }
+                ],
+                width: '40%',
+                height: '11%',
+                backgroundColor: '#848484aa',
+                position: 'absolute',
+                cornerRadius: 'lg',
+                offsetBottom: '4%',
+                offsetEnd: '7%',
+                borderWidth: '1px',
+                borderColor: '#ffffff'
               }
             ],
             paddingAll: '0px'
