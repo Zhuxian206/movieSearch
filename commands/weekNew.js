@@ -14,6 +14,19 @@ export default async (event) => {
         contents: []
       }
     }
+    const rand = (min, max) => {
+      return Math.round(Math.random() * (max - min)) + min
+    }
+    const group = []
+    for (let i = 0; i < 6; i++) {
+      const num = rand(0, $('.fg-frame').length - 1)
+      if (group.includes(num)) {
+        i--
+      } else {
+        group.push(num)
+      }
+    }
+    console.log(group)
 
     for (let i = 0; i < 5; i++) {
       replies2.contents.contents.push(
@@ -25,7 +38,7 @@ export default async (event) => {
             contents: [
               {
                 type: 'image',
-                url: `${$('.fg-frame').eq(i).find('img').attr('src')}`,
+                url: `${$('.fg-frame').eq(group[i]).find('img').attr('src')}`,
                 size: 'full',
                 aspectMode: 'cover',
                 aspectRatio: '3:4',
@@ -62,7 +75,7 @@ export default async (event) => {
                         contents: [
                           {
                             type: 'text',
-                            text: `${$('.fg-caption').eq(i).children('h3').text().trim()}`,
+                            text: `${$('.fg-caption').eq(group[i]).children('h3').text().trim()}`,
                             size: 'xl',
                             color: '#ffffff',
                             style: 'italic',
@@ -95,7 +108,7 @@ export default async (event) => {
                         contents: [
                           {
                             type: 'text',
-                            text: `${$('.fg-caption').eq(i).find('time').text()}`,
+                            text: `${$('.fg-caption').eq(group[i]).find('time').text()}`,
                             style: 'italic',
                             align: 'start',
                             weight: 'bold',
@@ -111,7 +124,7 @@ export default async (event) => {
                         action: {
                           type: 'uri',
                           label: '影片詳情',
-                          uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
+                          uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(group[i]).find('a').attr('href')}`
                         },
                         style: 'secondary',
                         margin: 'none',
