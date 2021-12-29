@@ -1,0 +1,10 @@
+http://app2.atmovies.com.tw/boxoffice/
+
+$('.boDate').eq(0).text()
+'統計時間：2021/12/24～2021/12/26'
+
+$('tbody > tr').eq(1).find('a').text().trim()
+'蜘蛛人:無家日 Spider-Man: No Way Home'
+
+$('tbody > tr').eq(1).find('a').attr('href')
+'http://www.atmovies.com.tw/movie/fsen10872600/'
