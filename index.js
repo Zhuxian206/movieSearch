@@ -2,6 +2,7 @@ import 'dotenv/config'
 import linebot from 'linebot'
 import search from './commands/search.js'
 import weekNew from './commands/weekNew.js'
+import popular from './commands/popular.js'
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -17,6 +18,8 @@ bot.on('message', async (event) => {
   if (event.message.type === 'text') {
     if (event.message.text.startsWith('!new')) {
       weekNew(event)
+    } else if (event.message.text.startsWith('!pa')) {
+      popular(event)
     } else {
       search(event)
     }
