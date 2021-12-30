@@ -1,7 +1,7 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 import popularBubble from '../template/popularBubble.js'
-import util from 'util'
+// import util from 'util'
 
 export default async (event) => {
   try {
@@ -16,21 +16,20 @@ export default async (event) => {
     // 網頁連結
     // popularBubble.contents.contents[0].body.contents[5].action.uri = 'https://www.agentm.tw' + `${$('.rank').eq(0).find('a').eq(0).attr('href')}`
 
-    for (let i = 6; i <= 9; i++) {
+    for (let i = 6; i <= 14; i++) {
       const j = i - 5
-      const k = i - 1
       popularBubble.contents.contents[0].body.contents[i].contents[0].contents[1].text = $('.rank').eq(0).find('a').eq(j).text().trim()
       popularBubble.contents.contents[1].body.contents[i].contents[0].contents[1].text = $('.rank').eq(1).find('a').eq(j).text().trim()
     }
     // 網址
-    for (let i = 5; i <= 10; i++) {
+    for (let i = 5; i <= 14; i++) {
       const j = i - 5
       popularBubble.contents.contents[0].body.contents[i].action.uri = 'https://www.agentm.tw' + `${$('.rank').eq(0).find('a').eq(j).attr('href')}`
-      popularBubble.contents.contents[1].body.contents[i].contents[0].contents[1].text = $('.rank').eq(1).find('a').eq(j).text().trim()
+      popularBubble.contents.contents[1].body.contents[i].action.uri = 'https://www.agentm.tw' + `${$('.rank').eq(1).find('a').eq(j).attr('href')}`
     }
 
-    console.log(popularBubble)
-    console.log(util.inspect(popularBubble, true, null))
+    // console.log(popularBubble)
+    // console.log(util.inspect(popularBubble, true, null))
 
     event.reply(popularBubble)
   } catch (error) {

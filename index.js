@@ -18,7 +18,7 @@ bot.on('message', async (event) => {
   if (event.message.type === 'text') {
     if (event.message.text.startsWith('!new')) {
       weekNew(event)
-    } else if (event.message.text.startsWith('!pa')) {
+    } else if (event.message.text.startsWith('!p')) {
       popular(event)
     } else {
       search(event)

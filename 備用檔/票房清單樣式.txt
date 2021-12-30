@@ -52,7 +52,7 @@
                 "text": "片名",
                 "size": "md",
                 "color": "#EFC164",
-                "align": "end",
+                "align": "center",
                 "weight": "bold",
                 "style": "italic"
               }
@@ -95,16 +95,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -147,16 +149,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -199,16 +203,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -251,16 +257,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -303,16 +311,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -355,16 +365,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -407,16 +419,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -459,16 +473,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -511,16 +527,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -563,16 +581,18 @@
                   }
                 ],
                 "height": "100%",
-                "width": "10%",
-                "alignItems": "center",
-                "justifyContent": "center"
+                "width": "20%",
+                "position": "relative",
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+                "offsetStart": "10px"
               },
               {
                 "type": "text",
-                "text": "法蘭西特派週報 The French Dispatch",
+                "text": "法蘭西 Dispatch",
                 "size": "md",
                 "color": "#ffffffcc",
-                "align": "end",
+                "align": "start",
                 "weight": "regular"
               }
             ],
@@ -592,7 +612,13 @@
         }
       }
     ],
-    "backgroundColor": "#1f0302"
+    "backgroundColor": "#2D2B27",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000000",
+      "endColor": "#302424"
+    }
   },
   "styles": {
     "footer": {

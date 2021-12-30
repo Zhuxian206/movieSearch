@@ -58,7 +58,7 @@ export default {
                       text: '片名',
                       size: 'md',
                       color: '#EFC164',
-                      align: 'end',
+                      align: 'center',
                       weight: 'bold',
                       style: 'italic'
                     }
@@ -101,16 +101,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -148,16 +150,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -196,16 +200,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -244,16 +250,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -292,16 +300,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -340,16 +350,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -388,16 +400,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -436,16 +450,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -484,16 +500,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -532,16 +550,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -557,7 +577,13 @@ export default {
               }
             }
           ],
-          backgroundColor: '#1f0302'
+          backgroundColor: '#849ebf',
+          background: {
+            type: 'linearGradient',
+            angle: '0deg',
+            startColor: '#000000',
+            endColor: '#302424'
+          }
         },
         styles: {
           footer: {
@@ -619,7 +645,7 @@ export default {
                       text: '片名',
                       size: 'md',
                       color: '#EFC164',
-                      align: 'end',
+                      align: 'center',
                       weight: 'bold',
                       style: 'italic'
                     }
@@ -662,16 +688,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -710,16 +738,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -758,16 +788,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -806,16 +838,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -854,16 +888,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -902,16 +938,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -950,16 +988,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -998,16 +1038,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -1046,16 +1088,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -1093,16 +1137,18 @@ export default {
                         }
                       ],
                       height: '100%',
-                      width: '10%',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      width: '20%',
+                      position: 'relative',
+                      alignItems: 'flex-start',
+                      justifyContent: 'center',
+                      offsetStart: '10px'
                     },
                     {
                       type: 'text',
-                      text: '法蘭西特派週報 The French Dispatch',
+                      text: '法蘭西 Dispatch',
                       size: 'md',
                       color: '#ffffffcc',
-                      align: 'end',
+                      align: 'start',
                       weight: 'regular'
                     }
                   ],
@@ -1117,7 +1163,13 @@ export default {
               }
             }
           ],
-          backgroundColor: '#1f0302'
+          backgroundColor: '#849ebf',
+          background: {
+            type: 'linearGradient',
+            angle: '0deg',
+            startColor: '#000000',
+            endColor: '#302424'
+          }
         },
         styles: {
           footer: {
