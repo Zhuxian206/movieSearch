@@ -18,8 +18,17 @@ export default async (event) => {
 
     for (let i = 6; i <= 9; i++) {
       const j = i - 5
+      const k = i - 1
       popularBubble.contents.contents[0].body.contents[i].contents[0].contents[1].text = $('.rank').eq(0).find('a').eq(j).text().trim()
+      popularBubble.contents.contents[1].body.contents[i].contents[0].contents[1].text = $('.rank').eq(1).find('a').eq(j).text().trim()
     }
+    // 網址
+    for (let i = 5; i <= 10; i++) {
+      const j = i - 5
+      popularBubble.contents.contents[0].body.contents[i].action.uri = 'https://www.agentm.tw' + `${$('.rank').eq(0).find('a').eq(j).attr('href')}`
+      popularBubble.contents.contents[1].body.contents[i].contents[0].contents[1].text = $('.rank').eq(1).find('a').eq(j).text().trim()
+    }
+
     console.log(popularBubble)
     console.log(util.inspect(popularBubble, true, null))
 
