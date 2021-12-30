@@ -3,6 +3,7 @@ import linebot from 'linebot'
 import search from './commands/search.js'
 import weekNew from './commands/weekNew.js'
 import popular from './commands/popular.js'
+import instruction from './commands/instruction.js'
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -20,6 +21,8 @@ bot.on('message', async (event) => {
       weekNew(event)
     } else if (event.message.text.startsWith('!p')) {
       popular(event)
+    } else if (event.message.text.startsWith('!說明')) {
+      instruction(event)
     } else {
       search(event)
     }

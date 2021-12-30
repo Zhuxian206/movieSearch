@@ -16,7 +16,7 @@ export default async (event) => {
     }
 
     if ($('.fg-title').length > 5) {
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 8; i++) {
         replies.contents.contents.push(
           {
             type: 'bubble',
@@ -29,81 +29,120 @@ export default async (event) => {
                   url: `${$('.fg-frame').eq(i).find('img').attr('src')}`,
                   size: 'full',
                   aspectMode: 'cover',
-                  aspectRatio: '2:3',
-                  gravity: 'top'
+                  aspectRatio: '5:7',
+                  gravity: 'center'
                 },
                 {
                   type: 'box',
                   layout: 'vertical',
+                  contents: [],
+                  position: 'absolute',
+                  background: {
+                    type: 'linearGradient',
+                    angle: '0deg',
+                    endColor: '#00000000',
+                    startColor: '#00000099'
+                  },
+                  width: '100%',
+                  height: '40%',
+                  offsetBottom: '0px',
+                  offsetStart: '0px',
+                  offsetEnd: '0px'
+                },
+                {
+                  type: 'box',
+                  layout: 'horizontal',
                   contents: [
                     {
                       type: 'box',
                       layout: 'vertical',
                       contents: [
                         {
-                          type: 'text',
-                          text: `${$('.fg-title').eq(i).text().trim()}`,
-                          size: 'xl',
-                          color: '#ffffff',
-                          weight: 'bold'
-                        }
-                      ]
-                    },
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'text',
-                          text: '上映日期 ' + `${$('.fg-caption').eq(i).find('time').text()}`,
-                          color: '#ebebeb',
-                          size: 'sm',
-                          flex: 0
-                        }
-                      ],
-                      spacing: 'lg'
-                    },
-                    {
-                      type: 'box',
-                      layout: 'vertical',
-                      contents: [
-                        {
-                          type: 'filler'
+                          type: 'box',
+                          layout: 'horizontal',
+                          contents: [
+                            {
+                              type: 'text',
+                              text: `${$('.fg-title').eq(i).text().trim()}`,
+                              size: 'xl',
+                              color: '#ffffff',
+                              style: 'italic',
+                              weight: 'bold'
+                            }
+                          ]
                         },
                         {
-                          type: 'button',
-                          action: {
-                            type: 'uri',
-                            label: '詳細資訊',
-                            uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
-                          },
-                          position: 'relative',
-                          margin: 'none',
-                          height: 'sm',
-                          color: '#ffffff'
+                          type: 'box',
+                          layout: 'horizontal',
+                          contents: [
+                            {
+                              type: 'box',
+                              layout: 'baseline',
+                              contents: [
+                                {
+                                  type: 'text',
+                                  text: '上映日期',
+                                  color: '#ccc7c5cc',
+                                  size: '16px',
+                                  flex: 0,
+                                  align: 'end'
+                                }
+                              ],
+                              flex: 0,
+                              spacing: 'lg'
+                            }
+                          ]
+                        },
+                        {
+                          type: 'box',
+                          layout: 'vertical',
+                          contents: [
+                            {
+                              type: 'text',
+                              text: `${$('.fg-caption').eq(i).find('time').text()}`,
+                              color: '#f2eae6cc',
+                              size: 'sm',
+                              style: 'italic',
+                              weight: 'bold'
+                            }
+                          ]
                         }
                       ],
-                      borderWidth: '1px',
-                      cornerRadius: '4px',
-                      spacing: 'sm',
-                      borderColor: '#ffffff',
-                      margin: 'xxl',
-                      height: '40px',
-                      background: {
-                        type: 'linearGradient',
-                        angle: '45deg',
-                        startColor: '#C4BFBDaa',
-                        endColor: '#ffffffaa'
-                      }
+                      spacing: 'xs'
                     }
                   ],
                   position: 'absolute',
                   offsetBottom: '0px',
                   offsetStart: '0px',
                   offsetEnd: '0px',
-                  backgroundColor: '#C4BFBDcc',
                   paddingAll: '20px',
-                  paddingTop: '18px'
+                  height: '30%'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  contents: [
+                    {
+                      type: 'button',
+                      action: {
+                        type: 'uri',
+                        label: '影片詳情',
+                        uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
+                      },
+                      height: 'sm',
+                      offsetTop: '1%',
+                      color: '#ffffff'
+                    }
+                  ],
+                  width: '40%',
+                  height: '11%',
+                  backgroundColor: '#848484aa',
+                  position: 'absolute',
+                  cornerRadius: 'lg',
+                  offsetBottom: '4%',
+                  offsetEnd: '7%',
+                  borderWidth: '1px',
+                  borderColor: '#ffffff'
                 }
               ],
               paddingAll: '0px'
@@ -125,81 +164,120 @@ export default async (event) => {
                   url: `${$('.fg-frame').eq(i).find('img').attr('src')}`,
                   size: 'full',
                   aspectMode: 'cover',
-                  aspectRatio: '2:3',
-                  gravity: 'top'
+                  aspectRatio: '5:7',
+                  gravity: 'center'
                 },
                 {
                   type: 'box',
                   layout: 'vertical',
+                  contents: [],
+                  position: 'absolute',
+                  background: {
+                    type: 'linearGradient',
+                    angle: '0deg',
+                    endColor: '#00000000',
+                    startColor: '#00000099'
+                  },
+                  width: '100%',
+                  height: '40%',
+                  offsetBottom: '0px',
+                  offsetStart: '0px',
+                  offsetEnd: '0px'
+                },
+                {
+                  type: 'box',
+                  layout: 'horizontal',
                   contents: [
                     {
                       type: 'box',
                       layout: 'vertical',
                       contents: [
                         {
-                          type: 'text',
-                          text: `${$('.fg-title').eq(i).text().trim()}`,
-                          size: 'xl',
-                          color: '#ffffff',
-                          weight: 'bold'
-                        }
-                      ]
-                    },
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'text',
-                          text: '上映日期 ' + `${$('.fg-caption').eq(i).find('time').text()}`,
-                          color: '#ebebeb',
-                          size: 'sm',
-                          flex: 0
-                        }
-                      ],
-                      spacing: 'lg'
-                    },
-                    {
-                      type: 'box',
-                      layout: 'vertical',
-                      contents: [
-                        {
-                          type: 'filler'
+                          type: 'box',
+                          layout: 'horizontal',
+                          contents: [
+                            {
+                              type: 'text',
+                              text: `${$('.fg-title').eq(i).text().trim()}`,
+                              size: 'xl',
+                              color: '#ffffff',
+                              style: 'italic',
+                              weight: 'bold'
+                            }
+                          ]
                         },
                         {
-                          type: 'button',
-                          action: {
-                            type: 'uri',
-                            label: '詳細資訊',
-                            uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
-                          },
-                          position: 'relative',
-                          margin: 'none',
-                          height: 'sm',
-                          color: '#ffffff'
+                          type: 'box',
+                          layout: 'horizontal',
+                          contents: [
+                            {
+                              type: 'box',
+                              layout: 'baseline',
+                              contents: [
+                                {
+                                  type: 'text',
+                                  text: '上映日期',
+                                  color: '#ccc7c5cc',
+                                  size: '16px',
+                                  flex: 0,
+                                  align: 'end'
+                                }
+                              ],
+                              flex: 0,
+                              spacing: 'lg'
+                            }
+                          ]
+                        },
+                        {
+                          type: 'box',
+                          layout: 'vertical',
+                          contents: [
+                            {
+                              type: 'text',
+                              text: `${$('.fg-caption').eq(i).find('time').text()}`,
+                              color: '#f2eae6cc',
+                              size: 'sm',
+                              style: 'italic',
+                              weight: 'bold'
+                            }
+                          ]
                         }
                       ],
-                      borderWidth: '1px',
-                      cornerRadius: '4px',
-                      spacing: 'sm',
-                      borderColor: '#ffffff',
-                      margin: 'xxl',
-                      height: '40px',
-                      background: {
-                        type: 'linearGradient',
-                        angle: '45deg',
-                        startColor: '#C4BFBDaa',
-                        endColor: '#ffffffaa'
-                      }
+                      spacing: 'xs'
                     }
                   ],
                   position: 'absolute',
                   offsetBottom: '0px',
                   offsetStart: '0px',
                   offsetEnd: '0px',
-                  backgroundColor: '#C4BFBDcc',
                   paddingAll: '20px',
-                  paddingTop: '18px'
+                  height: '30%'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  contents: [
+                    {
+                      type: 'button',
+                      action: {
+                        type: 'uri',
+                        label: '影片詳情',
+                        uri: 'https://www.agentm.tw' + `${$('.fg-itm').eq(i).find('a').attr('href')}`
+                      },
+                      height: 'sm',
+                      offsetTop: '1%',
+                      color: '#ffffff'
+                    }
+                  ],
+                  width: '40%',
+                  height: '11%',
+                  backgroundColor: '#848484aa',
+                  position: 'absolute',
+                  cornerRadius: 'lg',
+                  offsetBottom: '4%',
+                  offsetEnd: '7%',
+                  borderWidth: '1px',
+                  borderColor: '#ffffff'
                 }
               ],
               paddingAll: '0px'
