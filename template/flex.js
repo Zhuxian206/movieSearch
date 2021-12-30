@@ -430,7 +430,7 @@ export default {
                       position: 'relative',
                       margin: 'none',
                       height: 'sm',
-                      style: 'link'
+                      color: '#ffffff'
                     }
                   ],
                   borderWidth: '1px',

@@ -1,6 +1,6 @@
 export default {
   type: 'flex',
-  altText: '票房清單',
+  altText: '周末票房資訊',
   contents: {
     type: 'carousel',
     contents: [
@@ -12,303 +12,554 @@ export default {
           contents: [
             {
               type: 'text',
+              text: '★',
               weight: 'bold',
-              color: '#1DB446',
-              size: 'sm',
-              text: '★'
+              color: '#1BBC9B',
+              size: 'sm'
             },
             {
               type: 'text',
-              text: '台北週末票房排行榜',
+              text: '台北週末票房排行',
               weight: 'bold',
               size: 'xl',
               margin: 'md',
-              color: '#FFFFFF'
+              color: '#fcf3e0',
+              style: 'italic'
             },
             {
               type: 'text',
-              text: '統計時間：2021/12/24～2021/12/26',
+              text: '統計時間 2021-12-24~2021-12-26',
               size: 'xs',
               color: '#aaaaaa',
-              wrap: true,
+              wrap: true
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'md',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '排名',
+                      size: 'md',
+                      color: '#EFC164',
+                      flex: 0,
+                      gravity: 'bottom',
+                      weight: 'bold',
+                      style: 'italic'
+                    },
+                    {
+                      type: 'text',
+                      text: '片名',
+                      size: 'md',
+                      color: '#EFC164',
+                      align: 'end',
+                      weight: 'bold',
+                      style: 'italic'
+                    }
+                  ],
+                  action: {
+                    type: 'uri',
+                    label: 'action',
+                    uri: 'http://linecorp.com/'
+                  }
+                }
+              ],
+              height: '30px',
+              justifyContent: 'flex-end'
+            },
+            {
+              type: 'separator',
               margin: 'none'
             },
             {
               type: 'box',
-              layout: 'horizontal',
-              contents: [
-                {
-                  type: 'text',
-                  text: '排行',
-                  align: 'start',
-                  gravity: 'bottom',
-                  weight: 'bold',
-                  style: 'italic',
-                  color: '#FFFFFFaa'
-                },
-                {
-                  type: 'text',
-                  text: '片名',
-                  gravity: 'bottom',
-                  weight: 'bold',
-                  style: 'italic',
-                  align: 'end',
-                  color: '#FFFFFFaa'
-                }
-              ],
-              height: '40px',
-              width: '100%'
-            },
-            {
-              type: 'separator',
-              margin: 'xs'
-            },
-            {
-              type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '1  ',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名1',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '2',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名2',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '3',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '3',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名3',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '4',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '4',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名4',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '5',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '5',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名5',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '6',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '7',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '8',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '9',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '10',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             }
-          ]
+          ],
+          backgroundColor: '#1f0302'
         },
         styles: {
-          body: {
-            backgroundColor: '#363636'
-          },
           footer: {
             separator: true
           }
@@ -322,303 +573,553 @@ export default {
           contents: [
             {
               type: 'text',
+              text: '★',
               weight: 'bold',
-              color: 'red',
-              size: 'sm',
-              text: '★'
+              color: '#F35955',
+              size: 'sm'
             },
             {
               type: 'text',
-              text: '全美週末票房排行榜',
+              text: '美國週末票房排行',
               weight: 'bold',
               size: 'xl',
               margin: 'md',
-              color: '#FFFFFF'
+              color: '#fcf3e0',
+              style: 'italic'
             },
             {
               type: 'text',
-              text: '統計時間：2021/12/24～2021/12/26',
+              text: '統計時間 2021-12-24~2021-12-26',
               size: 'xs',
               color: '#aaaaaa',
-              wrap: true,
+              wrap: true
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'md',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '排名',
+                      size: 'md',
+                      color: '#EFC164',
+                      flex: 0,
+                      gravity: 'bottom',
+                      weight: 'bold',
+                      style: 'italic'
+                    },
+                    {
+                      type: 'text',
+                      text: '片名',
+                      size: 'md',
+                      color: '#EFC164',
+                      align: 'end',
+                      weight: 'bold',
+                      style: 'italic'
+                    }
+                  ],
+                  action: {
+                    type: 'uri',
+                    label: 'action',
+                    uri: 'http://linecorp.com/'
+                  }
+                }
+              ],
+              height: '30px',
+              justifyContent: 'flex-end'
+            },
+            {
+              type: 'separator',
               margin: 'none'
             },
             {
               type: 'box',
-              layout: 'horizontal',
-              contents: [
-                {
-                  type: 'text',
-                  text: '排行',
-                  align: 'start',
-                  gravity: 'bottom',
-                  weight: 'bold',
-                  style: 'italic',
-                  color: '#FFFFFFaa'
-                },
-                {
-                  type: 'text',
-                  text: '片名',
-                  gravity: 'bottom',
-                  weight: 'bold',
-                  style: 'italic',
-                  align: 'end',
-                  color: '#FFFFFFaa'
-                }
-              ],
-              height: '40px',
-              width: '100%'
-            },
-            {
-              type: 'separator',
-              margin: 'xs'
-            },
-            {
-              type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '1  ',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名1',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '2',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名2',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '3',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '3',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名3',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '4',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '4',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名4',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             },
             {
               type: 'box',
-              layout: 'horizontal',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
               contents: [
                 {
                   type: 'box',
-                  layout: 'vertical',
+                  layout: 'horizontal',
                   contents: [
                     {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '5',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
                       type: 'text',
-                      text: '5',
-                      size: 'sm',
-                      color: '#FFFFFF',
-                      position: 'relative',
-                      margin: 'none',
-                      weight: 'bold',
-                      align: 'start'
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
                     }
                   ],
-                  width: '15%',
-                  height: '50%',
-                  justifyContent: 'center',
-                  alignItems: 'flex-start',
-                  paddingStart: '2%'
-                },
-                {
-                  type: 'text',
-                  text: '片名5',
-                  weight: 'bold',
-                  style: 'normal',
-                  color: '#FFFFFFaa',
-                  size: 'md',
-                  wrap: false,
-                  align: 'end'
+
+                  height: '30px',
+                  alignItems: 'center'
                 }
               ],
-              margin: 'sm',
-              spacing: 'none',
-              height: '40px',
-              width: '100%',
               action: {
                 type: 'uri',
-                label: '無',
-                uri: 'http://linecorp.com/電影連結'
-              },
-              justifyContent: 'space-evenly',
-              alignItems: 'center'
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '6',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '7',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '8',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '9',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
+            },
+            {
+              type: 'box',
+              layout: 'vertical',
+              margin: 'lg',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'box',
+                  layout: 'horizontal',
+                  contents: [
+                    {
+                      type: 'box',
+                      layout: 'vertical',
+                      contents: [
+                        {
+                          type: 'text',
+                          text: '10',
+                          size: 'sm',
+                          color: '#ffffffcc',
+                          flex: 0,
+                          weight: 'bold'
+                        }
+                      ],
+                      height: '100%',
+                      width: '10%',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '法蘭西特派週報 The French Dispatch',
+                      size: 'md',
+                      color: '#ffffffcc',
+                      align: 'end',
+                      weight: 'regular'
+                    }
+                  ],
+                  height: '30px',
+                  alignItems: 'center'
+                }
+              ],
+              action: {
+                type: 'uri',
+                label: '網頁連結',
+                uri: 'http://linecorp.com/'
+              }
             }
-          ]
+          ],
+          backgroundColor: '#1f0302'
         },
         styles: {
-          body: {
-            backgroundColor: '#363636'
-          },
           footer: {
             separator: true
           }
