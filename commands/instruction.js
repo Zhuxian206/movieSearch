@@ -5,6 +5,10 @@ export default async (event) => {
         type: 'image',
         originalContentUrl: 'https://github.com/Zhuxian206/movieSearch/blob/master/images/alex-litvin-MAYsdoYpGuk-unsplash.jpg?raw=true',
         previewImageUrl: 'https://github.com/Zhuxian206/movieSearch/blob/master/images/alex-litvin-MAYsdoYpGuk-unsplash.jpg?raw=true'
+      },
+      {
+        type: 'text',
+        text: 'Hello, World!'
       }
     ]
     event.reply(ins)
