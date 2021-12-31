@@ -16,11 +16,12 @@ https://unsplash.com/photos/nW1n9eNHOsc
 <img src="https://github.com/Zhuxian206/movieSearch/blob/master/images/instruction/Screenshot_20211231-095209.jpg?raw=true" style="width: 300px"> <img src="https://github.com/Zhuxian206/movieSearch/blob/master/images/Screenshot_20211231-095723.jpg?raw=true" style="width: 300px">
 
 ### 代號輸入與按鈕
-輸入「!new」，會隨機向您推薦五部本周新片。
-輸入「!p」，則會顯示上周末的票房名單。
-想查看使用方式請輸入「!說明」。
-
+輸入「!new」，會隨機向您推薦五部本周新片。<br />
+輸入「!p」，則會顯示上周末的票房名單。<br />
+想查看使用方式請輸入「!說明」。<br />
 也可點選畫面下方選單使用以上功能。
+
+
 <img src="https://github.com/Zhuxian206/movieSearch/blob/master/images/instruction/Screenshot_20211231-094750.jpg?raw=true" style="width: 300px">
 
 ### 點選票房清單中的片名欄位，也會跳轉至電影資料頁
