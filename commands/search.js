@@ -285,6 +285,8 @@ export default async (event) => {
           }
         )
       }
+    } else if ($('.fg-title').length === 0) {
+      event.reply('SORRY! 找不到符合條件的資料，建議您調整輸入的關鍵字，重新進行搜尋')
     } else {
       event.reply('SORRY! 找不到符合條件的資料，建議您調整輸入的關鍵字，重新進行搜尋')
     }
