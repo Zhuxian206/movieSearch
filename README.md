@@ -12,7 +12,8 @@ https://unsplash.com/photos/nW1n9eNHOsc<br />
 ## 使用說明
 機器人有提供「電影搜尋」、「新片推薦」、「查看周末票房名次」等功能。
 
-### 如有想要搜尋的電影，可直接手動輸入關鍵字<br />點選按鈕會跳至電影資料頁
+### 電影搜尋
+如有想要搜尋的電影，可直接手動輸入關鍵字<br />點選按鈕會跳至電影資料頁<br />
 <img src="https://github.com/Zhuxian206/movieSearch/blob/master/images/instruction/Screenshot_20211231-095209.jpg?raw=true" style="width: 300px"> <img src="https://github.com/Zhuxian206/movieSearch/blob/master/images/instruction/Screenshot_20211231-095723.jpg?raw=true" style="width: 300px">
 
 ### 本周電影推薦
