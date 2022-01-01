@@ -161,6 +161,15 @@ export default async (event) => {
         }
       )
     }
+
+    for (let i = 0; i <= replies2.contents.contents.length - 1; i++) {
+      switch (replies2.contents.contents[i].body.contents[0].url) {
+        case '/static/images/database/default_movie_poster.png':
+          replies2.contents.contents[i].body.contents[0].url = 'https://www.agentm.tw/static/images/database/default_movie_poster.png'
+          break
+      }
+    }
+
     event.reply(replies2)
   } catch (error) {
     console.log(error)

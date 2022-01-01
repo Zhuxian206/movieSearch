@@ -15,7 +15,7 @@ export default async (event) => {
       }
     }
 
-    if ($('.fg-title').length > 5) {
+    if ($('.fg-title').length > 8) {
       for (let i = 0; i < 8; i++) {
         replies.contents.contents.push(
           {
@@ -287,6 +287,14 @@ export default async (event) => {
       }
     } else {
       event.reply('SORRY! 找不到符合條件的資料，建議您調整輸入的關鍵字，重新進行搜尋')
+    }
+
+    for (let i = 0; i <= replies.contents.contents.length - 1; i++) {
+      switch (replies.contents.contents[i].body.contents[0].url) {
+        case '/static/images/database/default_movie_poster.png':
+          replies.contents.contents[i].body.contents[0].url = 'https://www.agentm.tw/static/images/database/default_movie_poster.png'
+          break
+      }
     }
     console.log(replies)
     event.reply(replies)
